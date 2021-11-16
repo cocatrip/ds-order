@@ -19,7 +19,7 @@ const App = () => {
     return (
         <Container maxwidth="lg">
             <AppBar className={classes.appBar} position="static" color="inherit">
-                <Typography className={classes.heading} variant="h2" align="center">Resi Scanner</Typography>
+                <Typography className={classes.heading} variant="h3" align="center">Resi Scanner</Typography>
                 <img className={classes.logo} src="https://images.vexels.com/media/users/3/157861/isolated/preview/201f1712c6605ad8a87821237a4e72b4-barcode-scanner-icon-by-vexels.png" alt="resi-scanner" height="60"/>
             </AppBar>
             <Grow in>

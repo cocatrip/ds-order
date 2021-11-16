@@ -1,4 +1,4 @@
-import { Container } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -13,11 +13,23 @@ const Resis = () => {
     console.log(resis);
 
     return (
-        <Container className={classes.mainContainer}>
-            <h1 className={classes.smMargin}>Resis</h1>
-            <Resi />
-            <Resi />
-        </Container>
+        <Grid className={classes.container} container alignItems="stretch" spacing={3}>
+            <Grid item xs={12} sm={6} md={6}>
+                <Resi/>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+                <Resi/>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+                <Resi/>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+                <Resi/>
+            </Grid>
+            <Grid item xs={12} sm={6} md={6}>
+                <Resi/>
+            </Grid>
+        </Grid>
     );
 }
 
